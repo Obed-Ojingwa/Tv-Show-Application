@@ -49,7 +49,10 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             DisplayTvShows {
-                Toast.makeText(this, it.name, Toast.LENGTH_LONG).show()
+               // Toast.makeText(this, it.name, Toast.LENGTH_LONG).show()
+                // write code to navigate to the InfoActivity with the selected tvShow instance
+                startActivity(InfoActivity.intent(this, it))
+
             }
         }
     }
